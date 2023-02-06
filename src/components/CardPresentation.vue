@@ -1,26 +1,39 @@
+<script lang="ts" setup>
+  // variable
+  const msg = 'Hello!'
+
+  // functions
+  function log() {
+
+    console.log(msg)
+}
+  //
+</script>
+
 <template>
     <v-card
-      class="mx-auto"
+      class="mx-auto rounded-lg"
       max-width="434"
-      rounded="20"
     >
-      <v-img
-        height="100%"
-        cover
-        src="https://www.trio.dev/hubfs/Imported_Blog_Media/c346346f799a7980449c9ad34b7a634f-1-1.jpg"
+      <v-parallax
+        src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
       >
         <v-avatar
           color="grey"
           size="150"
           rounded="0"
         >
-          <v-img cover src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg"></v-img>
+          <v-img cover src="../assets/Foto-portfolio.jpg"></v-img>
         </v-avatar>
         <v-list-item
           class="text-white"
           title="Ivan Cuadrado"
           subtitle="Technical Software Developer"
+          append-icon="mdi-certificate"
+          download
+          href="../assets/Titulo.rar"
         ></v-list-item>
-      </v-img>
+       
+      </v-parallax>
     </v-card>
   </template>

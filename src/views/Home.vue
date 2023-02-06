@@ -1,17 +1,18 @@
 <template>
     <v-container>
-      <v-row>
-        <v-col>
-          <Avatar />
+      <v-row  align="center">
+        <v-col   >
+          <CardPresentation />
         </v-col>
         <v-col>
-          <HelloWorld />  
+          <Home />  
         </v-col>
       </v-row>
     </v-container>
 </template>
 
 <script lang="ts" setup>
-  import Avatar from '@/components/CardPresentation.vue'  
-  import HelloWorld from '@/components/HelloWorld.vue'
+  import CardPresentation from '@/components/CardPresentation.vue'  
+  import Home from '@/components/Home.vue'
+  
 </script>
